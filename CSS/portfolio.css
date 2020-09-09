@@ -73,8 +73,32 @@ body {
   color: var(--primary-category-color);
 }
 
-.bottom {
-  background-color: var(--primary-name-color);
+.bottom img {
+  margin-bottom: 20px;
+}
+.bottom address a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.bottom a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .address {
@@ -96,6 +120,20 @@ body {
   align-items: flex-start;
   text-decoration: none;
 }
+
+.icon-mail .icon-telephone {
+  margin-right: 10px;
+}
+
+.icon-mail {
+  height: 12px;
+  width: 16px;
+}
+.icon-telephone {
+  height: 16px;
+  width: 10px;
+}
+
 nav {
   display: inline-flex;
 }
@@ -167,17 +205,50 @@ nav {
 
   color: rgba(255, 255, 255, 0.6);
 }
-footer {
+
+.footer {
+  width: 100%;
   background-color: #2f303a;
   color: var(--primary-white-color);
-  padding-top: 111px;
-  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-left: 215px;
+  height: 252px;
+}
+
+.footer-links {
+  width: 500px;
+  margin-left: 70px;
+  display: inline-block;
+}
+
+.footer-links-title {
+  color: var(--primary-white-color);
+  margin: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-links .social-icon-link:hover,
+.footer-links .social-icon-link:focus {
+  background-color: var(--secondary-accent-color);
+}
+
+.footer-links .social-icon-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-links .social-icon {
+  fill: var(--primary-white-color);
 }
 
 .bottom-content {
-  width: 1200px;
-  padding-left: 15px;
-  margin: auto;
+  float: left;
+  width: 231px;
 }
 
 .end {
@@ -185,7 +256,25 @@ footer {
 }
 
 .address {
+  font-family: Roboto;
   font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.info {
+  color: var(--primary-category-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 .buttons {
   display: flex;
@@ -219,6 +308,94 @@ ul {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.container ul li {
+.container main ul li {
   list-style: none;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+.container ul li p {
+  margin-left: 24px;
+}
+
+.footer-links {
+  width: 500px;
+  margin-left: 70px;
+  display: inline-block;
+}
+
+.footer-links-title {
+  color: var(--primary-white-color);
+  margin: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-links .social-icon-link:hover,
+.footer-links .social-icon-link:focus {
+  background-color: var(--secondary-accent-color);
+}
+
+.footer-links .social-icon-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-links .social-icon {
+  fill: var(--primary-white-color);
+}
+.bottom-content {
+  float: left;
+  width: 231px;
+}
+
+.social-icon-list {
+  list-style: none;
+  display: flex;
+}
+
+.social-icon-item {
+  margin-right: 10px;
+}
+
+.social-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-white-color);
+  border-radius: 50%;
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+  background-color: var(--secondary-accent-color);
+}
+
+.social-icon-link:hover .social-icon,
+.social-icon-link:focus .social-icon {
+  fill: var(--primary-white-color);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--secondary-accent-color);
+}
+.social-icon-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  width: 270px;
+}
+.social-icon-list li {
+  display: flex;
+  justify-content: space-evenly;
 }
