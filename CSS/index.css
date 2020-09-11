@@ -138,6 +138,7 @@ nav {
   padding-top: 0;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
